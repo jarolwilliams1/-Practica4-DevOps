@@ -1,0 +1,14 @@
+name: Notificación CI
+
+on:
+  push:
+    branches:
+      - main   # Se ejecuta solo cuando hay push a main
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enviar notificación a ntfy
+        run: |
+          curl -d "Se subió código a main 🚀" ntfy.sh/devops-itla
