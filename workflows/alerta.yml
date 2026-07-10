@@ -10,4 +10,4 @@ jobs:
 
       - name: Enviar notificación
         run: |
-          curl -d "Se subió código a main 🚀" ntfy.sh/devops-itla
+          curl -d "Se subió código a main " ntfy.sh/devops-itla
