@@ -1,0 +1,13 @@
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Ejecutar Hola Mundo
+        run: node index.js
+
+      - name: Enviar notificación
+        run: |
+          curl -d "Se subió código a main " ntfy.sh/devops-itla
